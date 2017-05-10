@@ -15,6 +15,34 @@ public class Test {
 	        punkt.wyswietl();
 	 
 	        int wartosc = punkt.zwrocX();
-	        System.out.println("Wartoœæ: "+wartosc);
+	        System.out.println("Wartoï¿½ï¿½: "+wartosc);
 	    }
+}
+class Punkt {
+
+	int x;
+	int y;
+
+	void zwiekszX(){
+		x++;
+	}
+	void zwiekszY(){
+		y++;
+	}
+	void zmienX(int liczba){
+		x += liczba;
+	}
+
+	void zmienY(int liczba){
+		y += liczba;
+	}
+	int zwrocX(){
+		return x;
+	}
+	int zwrocY(){
+		return y;
+	}
+	void wyswietl(){
+		System.out.println("x: "+x+", y: "+y);
+	}
 }
